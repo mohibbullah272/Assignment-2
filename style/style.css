@@ -9,7 +9,7 @@
   *{
 margin: 0;
 padding: 0;
-background-color:rgb(19, 18, 18);
+background-color:black;
 color: white;
   }
   /* shared style */
@@ -23,9 +23,7 @@ color: rgb(255, 255, 255);
 font-size: 18px;
 font-weight: 600;
 }
-.hero-section{
-  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-}
+
  /* header style start hare */
  .nav-bar{
   display: flex;
@@ -59,11 +57,12 @@ font-weight: 800;
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  
  }
  .banner-content{
   width: 32rem;
-  height: 27rem;
- }
+  height: 27rem;}
+ 
  .banner-title{
 color: rgb(255, 255, 255);
 font-size: 60px;
@@ -79,6 +78,7 @@ font-weight: 900;
  .banner-btn{
   display: flex;
   gap: 14px;
+ 
  }
  #btn-2nd{
 box-sizing: border-box;
@@ -93,6 +93,7 @@ font-weight: 600;
   width: 21rem;
   height:36rem ;
   position: relative;
+  
  }
 .box-1{
 width: 170px;
@@ -164,27 +165,91 @@ font-size: 13px;
 font-weight: 400;
 text-align: center;
 }
+/* main section style start hare */
+.habit{
+  margin-top: 100px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.habit-img-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 
+}
+.himg{
+  border-radius: 50%;
+  width: 8rem;
 
-
-
-
-
-
-
-
+}
+.habit-title{
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.habit-des{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+padding-bottom: 50px;
+}
+.habit-img{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.habit-img-title{
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+margin: 6px 0px;
+text-align: center;
+}
+.habit-img-des{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+margin: 6px 0px;
+text-align: center;
+}
 /* small device media */
 
 @media screen and (max-width:576px) {
   .nav-bar>.lists{
     display: none;
   }
+  #btn-2nd{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 10px 20px 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+     }
+  .btn-primary{
+    padding: 10px 20px 10px 20px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    }
   .nav-bar{
     text-align: left;
     margin-right: 70%;
   }
   .banner{
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .box-1{
 top: 95%;
@@ -197,8 +262,10 @@ left: 5%;
   .banner-title{
     font-size: 40px;
   }
-  .banner-description{
-line-break: auto;
-  }
+.habit-img-container{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+}
+
 
 }
