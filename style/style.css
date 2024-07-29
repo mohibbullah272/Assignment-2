@@ -6,12 +6,12 @@
     font-weight:600;
     font-style: normal;
   }
-  *{
-margin: 0;
-padding: 0;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
   body{
-    background-color: rgb(25, 24, 24);
+    background-color: rgb(0, 0, 0);
     color: white;
   }
   /* shared style */
@@ -95,10 +95,12 @@ font-weight: 600;
  }
  .banner-img{
   width: 21rem;
-  height:36rem ;
-  position: relative;
-  
+  height:36rem; 
  }
+.banner-img-container{
+  position: relative;
+}
+
 .box-1{
 width: 170px;
 height: 80px;
@@ -108,11 +110,11 @@ border-radius: 12px;
 backdrop-filter: blur(30px);
 background: rgba(76, 73, 73, 0.54);
 display: flex;
-gap: 5px;
+gap: 10px;
 align-items: center;
 position: absolute;
-left: 55%;
-top: 85%;
+top: 25rem;
+right: 17rem;
 }
 .box-1-des{
 color: rgba(239, 237, 232, 0.65);
@@ -145,8 +147,8 @@ font-weight: 900;
   backdrop-filter: blur(30px);
   background: rgba(76, 73, 73, 0.54);
   position: absolute;
-  top: 40%;
-  left: 80%;
+  top: 8rem;
+  right:-2rem;
 }
 .box-2-title{
 color: rgb(255, 255, 255);
@@ -336,22 +338,123 @@ padding: 5px 10px 5px 10px;
 #cal-btn{
 margin: 15px 0px 10px 0px;
 }
+/* Our team section design start hare */
+.our-team-section{
+  margin-top: 50px;
+}
+.team-heading{
+  color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 48px;
+font-weight: 900;
+text-align: center;
+padding-bottom: 14px;
+}
+.team-des{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+padding-bottom: 40px;
+}
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;
+  max-width: 1040px;
+  background-color: rgba(56, 52, 52, 0.2);
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.team-img-container{
+  position: relative;
+padding: 5px 10px 5px 10px;
+}
+.member-img{
+  width: 20rem;
+  height: 15rem;
+  border-radius: 18px;
+ filter: brightness(0.8);
+}
+.title{
+  position: absolute;
+  top:190px;
+  left:20px;
+}
+.member-name{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 900;
+}
+.member-title{
+color: rgba(255, 255, 255, 0.6);
+font-family: Inter;
+font-size: 16px;
+opacity: 0.7px;
+}
+/* footer section design start hare */
+.footer-section{
+  max-width: 1440px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 66px;
+}
+.fitness-box-container{
+  width: 22rem;
+  margin-bottom: 50px;
+}
+.get-start-box1,
+.get-start-box2{
+  width: 180px;
+}
+.footer-heading{
+color: rgb(230, 83, 60);
+font-family: Inter;
+font-size: 40px;
+font-weight: 800;
+}
+.footer-des{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+padding-top: 15px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.start-heading{
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 22px;
+font-weight: 700;
+}
+.get-start-des{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+padding-top: 10px;
+}
+.footer-hr{
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.right{
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+padding: 20px 0px 20px 0px;
+}
 
 
 
@@ -396,14 +499,6 @@ margin: 15px 0px 10px 0px;
    justify-content: center;
    align-items: center;
   }
-  .box-1{
-top: 170%;
-left: 5%;
-  }
-  .box-2{
-    top: 135%;
-    left: 60%;
-  }
   .banner-title{
     font-size: 40px;
     width: 14rem;
@@ -438,6 +533,17 @@ font-weight: 900;
 .bmi-calculator-container{
   flex-direction: column;
 }
+.bmi-title{
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: left;
+}
+.bmi-des{
+  font-size: 16px;
+  text-align: left;
+  max-width: 25rem;
+  padding-top: 10px;
+}
 .bmi-calculator-content{
 width: 18rem;
 }
@@ -446,6 +552,29 @@ width: 18rem;
   margin-left: 10px;
 }
 #cal-btn{
-  padding: 20px 40px 20px 40px;
+  padding: 15px 30px 15px 30px;
+  font-weight: 700;
+}
+.form-design{
+  width: 10rem;
+}
+#sex,#factor{
+  width: 11rem;
+}
+.team-container{
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+}
+.our-team-section{
+  margin: 0 auto;
+  max-width: 22rem;
+  margin-top: 20px;
+}
+/* footer responsive */
+.footer-container{
+flex-direction: column;
+}
+.footer-section{
+  width: 100%;
 }
 }
