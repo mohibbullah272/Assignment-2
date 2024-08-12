@@ -48,6 +48,9 @@ font-weight: 400;
   border-radius: 39px;
   padding: 5px 6px;
  }
+ #nav-icon{
+  display: none;
+ }
  .nav-title{
 color: rgb(230, 83, 60);
 font-family: Inter;
@@ -148,7 +151,8 @@ font-weight: 900;
   background: rgba(76, 73, 73, 0.54);
   position: absolute;
   top: 8rem;
-  right:-2rem;
+  right:-1.5rem;
+  
 }
 .box-2-title{
 color: rgb(255, 255, 255);
@@ -515,16 +519,17 @@ margin: 20px;
   text-align: right;
   padding: 2rem;
 }
-
-
-
-
-
 /* small device media */
 
 @media screen and (max-width:576px) {
+#nav-icon{
+  display: block;
+ position: absolute;
+ left: 30rem;
+}
   .nav-bar>.lists{
     display: none;
+    position: relative;
   }
   #btn-2nd{
     box-sizing: border-box;
@@ -587,6 +592,7 @@ font-weight: 900;
 }
 .bmi-calculator-container{
   flex-direction: column;
+
 }
 .bmi-title{
   margin-top: 50px;
@@ -631,6 +637,8 @@ width: 18rem;
 /* footer responsive */
 .footer-container{
 flex-direction: column;
+align-items: start;
+padding: 20px;
 }
 .footer-section{
   width: 100%;
